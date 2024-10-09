@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akis</title>
+    <link rel="icon" href="Images/Akis logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/Akis logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScnuIFHg1jssNci1gXlpi7lrhtyV1W-rhykihlFg9F2oZnb-Q/viewform?usp=sf_link">ADMISSION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- -----------------about us---------------------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <img src="Images/about_us3.jpg" alt="" />
+        </div>
+        
+        <div class="about-col">
+          <h1>Nurturing Potential, Inspiring Success</h1>
+          <p>
+            Welcome to Abul Kalam International School, a newly established educational institution committed to fostering academic excellence and holistic development. Founded in 2024, we are dedicated to providing quality education that blends modern teaching methods with strong moral values, while preparing for future affiliations.
+At Abul Kalam International School, we believe in unlocking the potential of every student.
+ </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh0BzlbR8FG6kXIPysnBiv2KQ-J7nyvDxuGzFhKTxrcoYfeQ/viewform?usp=sf_link" class="hero-btn red-btn">Inquiry Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------footer---------------- -->
+
+    <section class="footer">
+      <h1>About Us</h1>
+      <div class="footer-intro">
+        <p>
+          "At Abul Kalam International School, we are committed to nurturing young minds and empowering students to reach their full potential. With a focus on academic excellence, 
+          character development,<br/>
+           and holistic growth, we provide a supportive environment that fosters curiosity,
+            creativity, and lifelong learning. Our dedicated faculty and staff work closely with
+             families to ensure that every child is prepared for future challenges and 
+             opportunities. Together, we inspire the leaders of tomorrow."
+        </p>
+      </div>
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100094296491449"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/RANIT_MANIK" class="fa fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/ranit_manik_/"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ranit-manik/"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Team Of Er Naushad</p>
+      <p>© 2024 Md Shahbaj</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
