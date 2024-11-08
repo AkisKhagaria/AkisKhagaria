@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html"><img src="akis logo.PNG" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScnuIFHg1jssNci1gXlpi7lrhtyV1W-rhykihlFg9F2oZnb-Q/viewform?usp=sf_link">ADMISSION</a></li>
+            
+            
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <!-- Dashboard Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Student Section -->
+            <div class="col-lg-4">
+                <div class="card bg-info text-white mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Students</h5>
+                        <p class="card-text">Manage and view all student information</p>
+                        <a href="https://docs.google.com/spreadsheets/d/16xnDQFz_w911toLh4bbUPsYZR6TjcHlgliYsmsNQ47E/edit?usp=sharing" class="btn btn-light">View Students</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teacher Section -->
+            <div class="col-lg-4">
+                <div class="card bg-success text-white mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Teachers</h5>
+                        <p class="card-text">Manage teacher details and assignments</p>
+                        <a href="#" class="btn btn-light">View Teachers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report Section -->
+            <div class="col-lg-4">
+                <div class="card bg-warning text-dark mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Reports</h5>
+                        <p class="card-text">Generate  and Print Student's Fee Receipt</p>
+                        <a href="fee.html" class="btn btn-light">Generate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+   
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

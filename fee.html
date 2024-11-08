@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Student Fee Slip</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Watermark Background -->
+    <div class="watermark">
+        <span class="watermark-text">SCHOOL FEE SLIP</span>
+    </div>
+
+    <div class="fee-slip-container">
+        <div class="header">
+            <h1>Abul Kalam international School</h1>
+            <p>Student Fee Payment Slip</p>
+        </div>
+
+        <!-- Student Information Form -->
+        <div class="student-details">
+            <h2>Student Information</h2>
+            <form id="student-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" placeholder="Enter Student Name" required>
+
+                <label for="roll-number">Roll Number:</label>
+                <input type="text" id="roll-number" placeholder="Enter Roll Number" required>
+
+                <label for="student-class">Class:</label>
+                <select id="student-class" required>
+                    <option value="" disabled selected>Select Class</option>
+                    <option value="1st Grade">Play</option>
+                    <option value="2nd Grade">NC</option>
+                    <option value="3rd Grade">Lkg</option>
+                    <option value="4th Grade">Ukg</option>
+                    <option value="5th Grade">1th</option>
+                    <option value="6th Grade">2th</option>
+                    <option value="7th Grade">3rd</option>
+                    <option value="8th Grade">4th</option>
+                    <option value="9th Grade">5th</option>
+                    <option value="10th Grade">5th</option>
+                    <option value="11th Grade">6th</option>
+                    <option value="12th Grade">7th</option>
+                </select>
+
+                <label for="payment-date">Date:</label>
+                <input type="date" id="payment-date" value="2024-11-07" required>
+
+                <button type="button" onclick="updateStudentInfo()">Submit Student Info</button>
+            </form>
+        </div>
+
+        <!-- Fee Details Form -->
+        <div class="fee-details">
+            <h2>Fee Details</h2>
+            <form id="fee-form">
+                <label for="fee-type">Fee Type:</label>
+                <input type="text" id="fee-type" placeholder="Enter Fee Type (e.g., Tuition Fee)" required>
+
+                <label for="fee-amount">Amount:</label>
+                <input type="number" id="fee-amount" placeholder="Enter Amount" required min="1">
+
+                <button type="button" onclick="addFee()">Add Fee</button>
+            </form>
+
+            <table id="fee-table">
+                <thead>
+                    <tr>
+                        <th>Fee Type</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="fee-details-body">
+                    <!-- Fee Items will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Fee Summary -->
+        <div class="fee-summary">
+            <h3>Fee Summary</h3>
+            <table>
+                <tr>
+                    <td><strong>Total Amount:</strong></td>
+                    <td id="total-amount">0</td>
+                </tr>
+                <tr>
+                    <td><strong>Payment Status:</strong></td>
+                    <td id="payment-status">Unpaid</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Payment Status Update -->
+        <div class="footer">
+            <button onclick="updatePaymentStatus()">Mark as Paid</button>
+            <button onclick="window.print()">Print Slip</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
